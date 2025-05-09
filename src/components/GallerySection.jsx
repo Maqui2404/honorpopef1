@@ -1,6 +1,7 @@
 "use client";
 // src/components/GallerySection.jsx
 import { useState } from "react";
+import Image from "next/image";
 
 const GallerySection = () => {
   // Placeholder para imágenes
@@ -73,9 +74,11 @@ const GallerySection = () => {
                   className="h-48 w-full overflow-hidden rounded cursor-pointer"
                   onClick={() => openModal(image)}
                 >
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.title}
+                    width={400}
+                    height={300}
                     className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -127,11 +130,13 @@ const GallerySection = () => {
               </button>
             </div>
             <div className="overflow-hidden rounded-lg">
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.title}
-                className="w-full h-auto object-contain max-h-[70vh] mx-auto"
-              />
+            <Image
+              src={selectedImage.src}
+              alt={selectedImage.title}
+              width={800}
+              height={600}
+              className="w-full h-auto object-contain max-h-[70vh] mx-auto"
+            />
             </div>
             <p className="mt-4 text-gray-600">{selectedImage.description}</p>
           </div>
