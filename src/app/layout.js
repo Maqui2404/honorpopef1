@@ -18,6 +18,9 @@ export const metadata = {
     siteName: 'Papa Francisco',
     type: 'website',
   },
+  other: {
+    "google-site-verification": "google-site-verification=z5e7wyN52pP6ACzeOZSgzyCmkFQARcn1dg0jBZzxEuc" // 👈 tu token
+  }
 };
 
 export default function RootLayout({ children }) {

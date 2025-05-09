@@ -38,7 +38,7 @@ export default function FrasesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center">Frases Célebres</h1>
           <p className="mt-4 text-xl text-center max-w-3xl mx-auto">
-            Palabras de sabiduría que reflejan el pensamiento del Papa Francisco.
+            Palabras de sabiduría que reflejan el pensamiento del Papa Francisco..
           </p>
         </div>
       </div>
