@@ -54,7 +54,7 @@ export default function FrasesPage() {
             <div className="grid gap-6 md:grid-cols-2">
               {section.quotes.map((quote, index) => (
                 <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                  <p className="text-lg text-gray-800 italic">"{quote}"</p>
+                  <p className="text-lg text-gray-800 italic">&quot;{quote}&quot;</p>
                   <p className="mt-4 text-gray-600">— Papa Francisco</p>
                 </div>
               ))}
